@@ -13,12 +13,6 @@
   "attributes": {
     "facilityName": {
       "type": "string"
-    },
-    "spaces": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::space.space",
-      "mappedBy": "facilities"
     }
   }
 }

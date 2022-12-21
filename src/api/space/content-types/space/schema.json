@@ -30,12 +30,6 @@
     "spaceCity": {
       "type": "string"
     },
-    "facilities": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::facility.facility",
-      "inversedBy": "spaces"
-    },
     "spacePlaces": {
       "type": "integer"
     },
@@ -46,14 +40,18 @@
       "mappedBy": "space"
     },
     "spaceImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "facilities": {
+      "type": "text"
     }
   }
 }
